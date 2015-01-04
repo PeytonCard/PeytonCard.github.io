@@ -126,7 +126,17 @@ label {
   cursor: pointer;
   transition: .5s;
   z-index: 2;
+  display: inline-block;
+  
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10-specific styles go here */  
+   label {
+    padding: 40px 0;
+   }
+}
+
 label:hover {color: #1E6743;}
 label:before {
   display: block;
